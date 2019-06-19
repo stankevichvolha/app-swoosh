@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="WelcomeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="-166" y="-114" width="1044" height="1337"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find a team in your city and dominate the ligue" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QtW-c0-gNg">
-                                <rect key="frame" x="57.5" y="279.5" width="260" height="41"/>
+                                <rect key="frame" x="57.5" y="275.5" width="260" height="41"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="Dn6-Zu-lt7"/>
                                 </constraints>
@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ON GOING ALL OUT" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nVr-tZ-bEj">
-                                <rect key="frame" x="0.0" y="222.5" width="375" height="37"/>
+                                <rect key="frame" x="0.0" y="218.5" width="375" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="260" id="Elr-1C-HfT"/>
                                 </constraints>
@@ -40,7 +40,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GO ALL IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nso-1C-tpB">
-                                <rect key="frame" x="55" y="150" width="265" height="72.5"/>
+                                <rect key="frame" x="55" y="146" width="265" height="72.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="265" id="UAp-ZI-2po"/>
                                 </constraints>
@@ -49,7 +49,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swooshLogo" translatesAutoresizingMaskIntoConstraints="NO" id="VpZ-0Y-JyE">
-                                <rect key="frame" x="128" y="40" width="119" height="20"/>
+                                <rect key="frame" x="179.5" y="40" width="16" height="16"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hw7-WQ-Wdh" customClass="BorderButton" customModule="app_swoosh">
                                 <rect key="frame" x="10" y="567" width="355" height="50"/>
@@ -94,10 +94,10 @@
             </objects>
             <point key="canvasLocation" x="144" y="74"/>
         </scene>
-        <!--View Controller-->
+        <!--LeaugeVC-->
         <scene sceneID="p1y-bq-GnU">
             <objects>
-                <viewController id="UbB-cg-i3s" sceneMemberID="viewController">
+                <viewController id="UbB-cg-i3s" customClass="LeaugeVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qt5-Lm-XFm">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,6 +137,9 @@
                                             <color key="titleColor" red="0.99264929349999997" green="1" blue="0.99415296500000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onMensTapped:" destination="UbB-cg-i3s" eventType="touchUpInside" id="gEk-XZ-IH5"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WIi-HR-Qgj" customClass="BorderButton" customModule="app_swoosh">
                                         <rect key="frame" x="0.0" y="79" width="355" height="50"/>
@@ -149,6 +152,9 @@
                                             <color key="titleColor" red="0.99264929349999997" green="1" blue="0.99415296500000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onWemenTapped:" destination="UbB-cg-i3s" eventType="touchUpInside" id="6Ul-1W-Aew"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SYD-Aa-Lbz" customClass="BorderButton" customModule="app_swoosh">
                                         <rect key="frame" x="0.0" y="158" width="355" height="50"/>
@@ -161,10 +167,13 @@
                                             <color key="titleColor" red="0.99264929349999997" green="1" blue="0.99415296500000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                         </state>
+                                        <connections>
+                                            <action selector="onCoedTapped:" destination="UbB-cg-i3s" eventType="touchUpInside" id="CJM-Fg-Wl7"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOU-S7-Km2" customClass="BorderButton" customModule="app_swoosh">
+                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cOU-S7-Km2" customClass="BorderButton" customModule="app_swoosh">
                                 <rect key="frame" x="10" y="597" width="355" height="50"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.52156464039999995" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
@@ -176,6 +185,9 @@
                                     <color key="titleColor" red="0.99264929349999997" green="1" blue="0.99415296500000006" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnNextTapped:" destination="UbB-cg-i3s" eventType="touchUpInside" id="oad-KX-aZX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x5w-Ka-OqY">
                                 <rect key="frame" x="10" y="30" width="29" height="24"/>
@@ -212,16 +224,20 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YOa-ZB-cfi"/>
                     </view>
+                    <connections>
+                        <outlet property="nextBtn" destination="cOU-S7-Km2" id="Qo1-Ax-CPO"/>
+                        <segue destination="gR4-6M-STA" kind="show" identifier="ScillVCSeque" id="uPo-Hk-FAc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cU1-KR-ZuZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="Fvy-eG-QHp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="832.79999999999995" y="72.413793103448285"/>
         </scene>
-        <!--View Controller-->
+        <!--SkillsVC-->
         <scene sceneID="6cX-Lk-CIU">
             <objects>
-                <viewController id="gR4-6M-STA" sceneMemberID="viewController">
+                <viewController id="gR4-6M-STA" customClass="SkillsVC" customModule="app_swoosh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="i9P-Ha-cn3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
